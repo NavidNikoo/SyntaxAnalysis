@@ -1,0 +1,3 @@
+/Users/navidnikoo/Desktop/CSUF CPSC/CPSC 323/SyntaxAnalysis-main/cmake-build-debug/CMakeFiles/SyntaxAnalysis.dir
+/Users/navidnikoo/Desktop/CSUF CPSC/CPSC 323/SyntaxAnalysis-main/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/navidnikoo/Desktop/CSUF CPSC/CPSC 323/SyntaxAnalysis-main/cmake-build-debug/CMakeFiles/rebuild_cache.dir

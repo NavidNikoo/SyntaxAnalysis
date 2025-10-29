@@ -1,0 +1,14 @@
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression> ;
+Token: Identifier Lexeme: x
+Token: Operator Lexeme: =
+Token: Integer Lexeme: 1
+Token: Separator Lexeme: ;
+<Statement> -> <Print>
+<Print> -> put ( <Expression> ) ;
+Token: Keyword Lexeme: put
+Token: Separator Lexeme: (
+Token: Identifier Lexeme: x
+Token: Separator Lexeme: )
+Token: Separator Lexeme: ;
+Parsing finished successfully.

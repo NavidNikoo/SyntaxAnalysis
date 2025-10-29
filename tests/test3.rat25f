@@ -1,0 +1,59 @@
+"---- Taylor approximation of e^x using n terms ----"
+
+function factorial ( n integer )
+integer i , res ;
+{
+    res = 1 ;
+    i = 1 ;
+    while ( i <= n ) {
+        res = res * i ;
+        i = i + 1 ;
+    }
+    return res ;
+}
+
+function powr ( x real , n integer )
+integer i ;
+real acc ;
+{
+    acc = 1.00 ;
+    i = 0 ;
+    while ( i < n ) {
+        acc = acc * x ;
+        i = i + 1 ;
+    }
+    return acc ;
+}
+
+function taylor_exp ( x real , n integer )
+integer k ;
+integer fk ;
+real sum , tp , term ;
+{
+    sum = 0.00 ;
+    k = 0 ;
+    while ( k <= n ) {
+        tp = powr ( x , k ) ;
+        fk = factorial ( k ) ;
+        term = tp / fk ;
+        sum = sum + term ;
+        k = k + 1 ;
+    }
+    return sum ;
+}
+
+"---- main ----"
+function main ( )
+integer n ;
+real x , approx ;
+{
+    put ( x ) ;   "prompt style I/O는 없으니 단순히 변수명을 put해서 신호만"
+    get ( x ) ;
+    put ( n ) ;
+    get ( n ) ;
+
+    approx = taylor_exp ( x , n ) ;
+    put ( approx ) ;
+
+    return ;
+}

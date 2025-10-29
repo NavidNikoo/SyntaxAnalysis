@@ -1,0 +1,72 @@
+Token: Identifier Lexeme: function
+Token: Identifier Lexeme: square
+Token: Separator Lexeme: (
+Token: Identifier Lexeme: r
+Token: Keyword Lexeme: real
+Token: Separator Lexeme: )
+Token: Keyword Lexeme: real
+Token: Identifier Lexeme: result
+Token: Separator Lexeme: ;
+Token: Separator Lexeme: {
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression> ;
+Token: Identifier Lexeme: result
+Token: Operator Lexeme: =
+Token: Identifier Lexeme: r
+Token: Operator Lexeme: *
+Token: Identifier Lexeme: r
+Token: Separator Lexeme: ;
+<Statement> -> <Return>
+<Return> -> return ; | return <Expression> ;
+Token: Keyword Lexeme: return
+Token: Identifier Lexeme: result
+Token: Separator Lexeme: ;
+Token: Separator Lexeme: }
+Token: Identifier Lexeme: function
+Token: Identifier Lexeme: main
+Token: Separator Lexeme: (
+Token: Separator Lexeme: )
+Token: Keyword Lexeme: real
+Token: Identifier Lexeme: r
+Token: Separator Lexeme: ,
+Token: Identifier Lexeme: area
+Token: Separator Lexeme: ;
+Token: Separator Lexeme: {
+<Statement> -> <Print>
+<Print> -> put ( <Expression> ) ;
+Token: Keyword Lexeme: put
+Token: Separator Lexeme: (
+Token: Identifier Lexeme: r
+Token: Separator Lexeme: )
+Token: Separator Lexeme: ;
+<Statement> -> <Scan>
+<Scan> -> get ( <IDs> ) ;
+Token: Keyword Lexeme: get
+Token: Separator Lexeme: (
+Token: Identifier Lexeme: r
+Token: Separator Lexeme: )
+Token: Separator Lexeme: ;
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression> ;
+Token: Identifier Lexeme: area
+Token: Operator Lexeme: =
+Token: Real Lexeme: 3.1416
+Token: Operator Lexeme: *
+Token: Identifier Lexeme: square
+Token: Separator Lexeme: (
+Token: Identifier Lexeme: r
+Token: Separator Lexeme: )
+Token: Separator Lexeme: ;
+<Statement> -> <Print>
+<Print> -> put ( <Expression> ) ;
+Token: Keyword Lexeme: put
+Token: Separator Lexeme: (
+Token: Identifier Lexeme: area
+Token: Separator Lexeme: )
+Token: Separator Lexeme: ;
+<Statement> -> <Return>
+<Return> -> return ; | return <Expression> ;
+Token: Keyword Lexeme: return
+Token: Separator Lexeme: ;
+Token: Separator Lexeme: }
+Parsing finished successfully.

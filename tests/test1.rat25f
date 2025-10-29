@@ -1,0 +1,15 @@
+"---- Program to check if input number is positive ----"
+function main ( )
+integer x ;
+{
+    put ( x ) ;
+    get ( x ) ;
+
+    if ( x > 0 )
+        put ( "true" ) ;
+    else
+        put ( "false" ) ;
+    fi
+
+    return ;
+}

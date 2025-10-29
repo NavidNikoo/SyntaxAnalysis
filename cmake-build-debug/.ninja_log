@@ -1,0 +1,15 @@
+# ninja log v6
+5	480	1758837167880920843	CMakeFiles/LexicalAnalysis.dir/Lexer.cpp.o	70dc1fe4051a7a04
+331	359	1758837321569147348	LexicalAnalysis	89a1bfdd3df15751
+3	331	1758837321241214244	CMakeFiles/LexicalAnalysis.dir/main.cpp.o	6cf279e1dcd11439
+2	43	1758837594311936577	build.ninja	326044a6f09e322d
+1	497	1758837594318715943	CMakeFiles/LexicalAnalysis.dir/src/Lexer.cpp.o	8521bb25327ba85a
+0	522	1758837594318536776	CMakeFiles/LexicalAnalysis.dir/src/main.cpp.o	917868148ec80e5a
+522	605	1758837594840320538	LexicalAnalysis	7974dbc0dbfd6db
+3	549	1758838255491817195	CMakeFiles/LexicalAnalysis.dir/src/main.cpp.o	917868148ec80e5a
+549	629	1758838256036997655	LexicalAnalysis	7974dbc0dbfd6db
+4	512	1758838667352606856	CMakeFiles/LexicalAnalysis.dir/src/main.cpp.o	917868148ec80e5a
+5	524	1758838667353689278	CMakeFiles/LexicalAnalysis.dir/src/Lexer.cpp.o	8521bb25327ba85a
+524	605	1758838667872088606	LexicalAnalysis	7974dbc0dbfd6db
+4	542	1758839232589519209	CMakeFiles/LexicalAnalysis.dir/src/Lexer.cpp.o	8521bb25327ba85a
+542	623	1758839233127173423	LexicalAnalysis	7974dbc0dbfd6db

@@ -1,0 +1,279 @@
+Token: Identifier Lexeme: function
+Token: Identifier Lexeme: factorial
+Token: Separator Lexeme: (
+Token: Identifier Lexeme: n
+Token: Keyword Lexeme: integer
+Token: Separator Lexeme: )
+Token: Keyword Lexeme: integer
+Token: Identifier Lexeme: i
+Token: Separator Lexeme: ,
+Token: Identifier Lexeme: res
+Token: Separator Lexeme: ;
+Token: Separator Lexeme: {
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression> ;
+Token: Identifier Lexeme: res
+Token: Operator Lexeme: =
+Token: Integer Lexeme: 1
+Token: Separator Lexeme: ;
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression> ;
+Token: Identifier Lexeme: i
+Token: Operator Lexeme: =
+Token: Integer Lexeme: 1
+Token: Separator Lexeme: ;
+<Statement> -> <While>
+<While> -> while ( <Condition> ) <Statement>
+Token: Keyword Lexeme: while
+Token: Separator Lexeme: (
+Token: Identifier Lexeme: i
+Token: Operator Lexeme: <=
+Token: Identifier Lexeme: n
+Token: Separator Lexeme: )
+<Statement> -> <Compound>
+Token: Separator Lexeme: {
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression> ;
+Token: Identifier Lexeme: res
+Token: Operator Lexeme: =
+Token: Identifier Lexeme: res
+Token: Operator Lexeme: *
+Token: Identifier Lexeme: i
+Token: Separator Lexeme: ;
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression> ;
+Token: Identifier Lexeme: i
+Token: Operator Lexeme: =
+Token: Identifier Lexeme: i
+Token: Operator Lexeme: +
+Token: Integer Lexeme: 1
+Token: Separator Lexeme: ;
+Token: Separator Lexeme: }
+<Statement> -> <Return>
+<Return> -> return ; | return <Expression> ;
+Token: Keyword Lexeme: return
+Token: Identifier Lexeme: res
+Token: Separator Lexeme: ;
+Token: Separator Lexeme: }
+Token: Identifier Lexeme: function
+Token: Identifier Lexeme: powr
+Token: Separator Lexeme: (
+Token: Identifier Lexeme: x
+Token: Keyword Lexeme: real
+Token: Separator Lexeme: ,
+Token: Identifier Lexeme: n
+Token: Keyword Lexeme: integer
+Token: Separator Lexeme: )
+Token: Keyword Lexeme: integer
+Token: Identifier Lexeme: i
+Token: Separator Lexeme: ;
+Token: Keyword Lexeme: real
+Token: Identifier Lexeme: acc
+Token: Separator Lexeme: ;
+Token: Separator Lexeme: {
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression> ;
+Token: Identifier Lexeme: acc
+Token: Operator Lexeme: =
+Token: Real Lexeme: 1.00
+Token: Separator Lexeme: ;
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression> ;
+Token: Identifier Lexeme: i
+Token: Operator Lexeme: =
+Token: Integer Lexeme: 0
+Token: Separator Lexeme: ;
+<Statement> -> <While>
+<While> -> while ( <Condition> ) <Statement>
+Token: Keyword Lexeme: while
+Token: Separator Lexeme: (
+Token: Identifier Lexeme: i
+Token: Operator Lexeme: <
+Token: Identifier Lexeme: n
+Token: Separator Lexeme: )
+<Statement> -> <Compound>
+Token: Separator Lexeme: {
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression> ;
+Token: Identifier Lexeme: acc
+Token: Operator Lexeme: =
+Token: Identifier Lexeme: acc
+Token: Operator Lexeme: *
+Token: Identifier Lexeme: x
+Token: Separator Lexeme: ;
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression> ;
+Token: Identifier Lexeme: i
+Token: Operator Lexeme: =
+Token: Identifier Lexeme: i
+Token: Operator Lexeme: +
+Token: Integer Lexeme: 1
+Token: Separator Lexeme: ;
+Token: Separator Lexeme: }
+<Statement> -> <Return>
+<Return> -> return ; | return <Expression> ;
+Token: Keyword Lexeme: return
+Token: Identifier Lexeme: acc
+Token: Separator Lexeme: ;
+Token: Separator Lexeme: }
+Token: Identifier Lexeme: function
+Token: Identifier Lexeme: taylor_exp
+Token: Separator Lexeme: (
+Token: Identifier Lexeme: x
+Token: Keyword Lexeme: real
+Token: Separator Lexeme: ,
+Token: Identifier Lexeme: n
+Token: Keyword Lexeme: integer
+Token: Separator Lexeme: )
+Token: Keyword Lexeme: integer
+Token: Identifier Lexeme: k
+Token: Separator Lexeme: ;
+Token: Keyword Lexeme: integer
+Token: Identifier Lexeme: fk
+Token: Separator Lexeme: ;
+Token: Keyword Lexeme: real
+Token: Identifier Lexeme: sum
+Token: Separator Lexeme: ,
+Token: Identifier Lexeme: tp
+Token: Separator Lexeme: ,
+Token: Identifier Lexeme: term
+Token: Separator Lexeme: ;
+Token: Separator Lexeme: {
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression> ;
+Token: Identifier Lexeme: sum
+Token: Operator Lexeme: =
+Token: Real Lexeme: 0.00
+Token: Separator Lexeme: ;
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression> ;
+Token: Identifier Lexeme: k
+Token: Operator Lexeme: =
+Token: Integer Lexeme: 0
+Token: Separator Lexeme: ;
+<Statement> -> <While>
+<While> -> while ( <Condition> ) <Statement>
+Token: Keyword Lexeme: while
+Token: Separator Lexeme: (
+Token: Identifier Lexeme: k
+Token: Operator Lexeme: <=
+Token: Identifier Lexeme: n
+Token: Separator Lexeme: )
+<Statement> -> <Compound>
+Token: Separator Lexeme: {
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression> ;
+Token: Identifier Lexeme: tp
+Token: Operator Lexeme: =
+Token: Identifier Lexeme: powr
+Token: Separator Lexeme: (
+Token: Identifier Lexeme: x
+Token: Separator Lexeme: ,
+Token: Identifier Lexeme: k
+Token: Separator Lexeme: )
+Token: Separator Lexeme: ;
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression> ;
+Token: Identifier Lexeme: fk
+Token: Operator Lexeme: =
+Token: Identifier Lexeme: factorial
+Token: Separator Lexeme: (
+Token: Identifier Lexeme: k
+Token: Separator Lexeme: )
+Token: Separator Lexeme: ;
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression> ;
+Token: Identifier Lexeme: term
+Token: Operator Lexeme: =
+Token: Identifier Lexeme: tp
+Token: Operator Lexeme: /
+Token: Identifier Lexeme: fk
+Token: Separator Lexeme: ;
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression> ;
+Token: Identifier Lexeme: sum
+Token: Operator Lexeme: =
+Token: Identifier Lexeme: sum
+Token: Operator Lexeme: +
+Token: Identifier Lexeme: term
+Token: Separator Lexeme: ;
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression> ;
+Token: Identifier Lexeme: k
+Token: Operator Lexeme: =
+Token: Identifier Lexeme: k
+Token: Operator Lexeme: +
+Token: Integer Lexeme: 1
+Token: Separator Lexeme: ;
+Token: Separator Lexeme: }
+<Statement> -> <Return>
+<Return> -> return ; | return <Expression> ;
+Token: Keyword Lexeme: return
+Token: Identifier Lexeme: sum
+Token: Separator Lexeme: ;
+Token: Separator Lexeme: }
+Token: Identifier Lexeme: function
+Token: Identifier Lexeme: main
+Token: Separator Lexeme: (
+Token: Separator Lexeme: )
+Token: Keyword Lexeme: integer
+Token: Identifier Lexeme: n
+Token: Separator Lexeme: ;
+Token: Keyword Lexeme: real
+Token: Identifier Lexeme: x
+Token: Separator Lexeme: ,
+Token: Identifier Lexeme: approx
+Token: Separator Lexeme: ;
+Token: Separator Lexeme: {
+<Statement> -> <Print>
+<Print> -> put ( <Expression> ) ;
+Token: Keyword Lexeme: put
+Token: Separator Lexeme: (
+Token: Identifier Lexeme: x
+Token: Separator Lexeme: )
+Token: Separator Lexeme: ;
+<Statement> -> <Scan>
+<Scan> -> get ( <IDs> ) ;
+Token: Keyword Lexeme: get
+Token: Separator Lexeme: (
+Token: Identifier Lexeme: x
+Token: Separator Lexeme: )
+Token: Separator Lexeme: ;
+<Statement> -> <Print>
+<Print> -> put ( <Expression> ) ;
+Token: Keyword Lexeme: put
+Token: Separator Lexeme: (
+Token: Identifier Lexeme: n
+Token: Separator Lexeme: )
+Token: Separator Lexeme: ;
+<Statement> -> <Scan>
+<Scan> -> get ( <IDs> ) ;
+Token: Keyword Lexeme: get
+Token: Separator Lexeme: (
+Token: Identifier Lexeme: n
+Token: Separator Lexeme: )
+Token: Separator Lexeme: ;
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression> ;
+Token: Identifier Lexeme: approx
+Token: Operator Lexeme: =
+Token: Identifier Lexeme: taylor_exp
+Token: Separator Lexeme: (
+Token: Identifier Lexeme: x
+Token: Separator Lexeme: ,
+Token: Identifier Lexeme: n
+Token: Separator Lexeme: )
+Token: Separator Lexeme: ;
+<Statement> -> <Print>
+<Print> -> put ( <Expression> ) ;
+Token: Keyword Lexeme: put
+Token: Separator Lexeme: (
+Token: Identifier Lexeme: approx
+Token: Separator Lexeme: )
+Token: Separator Lexeme: ;
+<Statement> -> <Return>
+<Return> -> return ; | return <Expression> ;
+Token: Keyword Lexeme: return
+Token: Separator Lexeme: ;
+Token: Separator Lexeme: }
+Parsing finished successfully.
